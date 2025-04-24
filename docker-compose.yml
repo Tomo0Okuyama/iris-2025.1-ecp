@@ -7,7 +7,7 @@ services:
       - 10501:1972
     init: true
     volumes:
-      - /Users/tokuyama/workspace/iris-2025.1-ecp/iris_db/opt/iris:/opt/iris
+      - ./iris_db/opt/iris:/opt/iris
     tty: true
     environment:
       - TZ=JST-9
@@ -18,7 +18,7 @@ services:
     hostname: webgw_db
     init: true
     volumes:
-      - /Users/tokuyama/workspace/iris-2025.1-ecp/webgw_db/opt/iris:/opt/iris
+      - ./webgw_db/opt/iris:/opt/iris
     ports:
       - 10502:80
       - 10503:443
@@ -35,7 +35,7 @@ services:
       - 10504:1972
     init: true
     volumes:
-      - /Users/tokuyama/workspace/iris-2025.1-ecp/iris_ap/opt/iris:/opt/iris
+      - ./iris_ap/opt/iris:/opt/iris
     tty: true
     environment:
       - TZ=JST-9
@@ -46,7 +46,7 @@ services:
     hostname: webgw_ap
     init: true
     volumes:
-      - /Users/tokuyama/workspace/iris-2025.1-ecp/webgw_ap/opt/iris:/opt/iris
+      - ./webgw_ap/opt/iris:/opt/iris
     ports:
       - 10505:80
       - 10506:443
