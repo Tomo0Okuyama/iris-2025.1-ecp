@@ -4,7 +4,7 @@ services:
     container_name: iris_db
     hostname: iris_db
     ports:
-      - "10501:1972"
+      - 10501:1972
     init: true
     volumes:
       - /Users/tokuyama/workspace/iris-2025.1-ecp/iris_db/opt/iris:/opt/iris
@@ -32,7 +32,7 @@ services:
     container_name: iris_ap
     hostname: iris_ap
     ports:
-      - "10504:1972"
+      - 10504:1972
     init: true
     volumes:
       - /Users/tokuyama/workspace/iris-2025.1-ecp/iris_ap/opt/iris:/opt/iris
